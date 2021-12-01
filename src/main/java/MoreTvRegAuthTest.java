@@ -54,20 +54,6 @@ public class MoreTvRegAuthTest {
         signinButton.click();
         Thread.sleep(1000);
 
-        /*var signinButton = driver
-                .findElement(By.xpath("//a[@class='index-module__link--0IPrm LoginView-module__enterLinkWrapper--FpQlg']"));
-        if (signinButton == null) {
-            signinButton = driver.findElement(By.xpath("//svg[@class='Avatar-module__small--yf6Yk']"));
-        }
-        if (signinButton == null) {
-            signinButton = driver
-                    .findElement(By.xpath("//a[@class='index-module__link--0IPrm HeaderView-module__subscribeBtn--Syo+y Button-module__text-white--KbFNk Button-module__bg-blue--h0yoI Button-module__noLabel--dOe5s Button-module__Button--z6EB4']"));
-            Assert.assertNotNull(signinButton);
-            signinButton.click();
-            Thread.sleep(1000);
-
-        }*/
-
         signinButton = driver.findElement(By.xpath("//a[@class='index-module__link--0IPrm Subscription-module__affixButton--UeaQF Button-module__text-white--KbFNk Button-module__noLabel--dOe5s Button-module__Button--z6EB4']"));
         Assert.assertNotNull(signinButton);
         signinButton.click();
