@@ -10,7 +10,7 @@ public class CdsVyatkaTest {
     WebDriver driver;
     final String URL = "https://m.cdsvyatka.com/";
 
-    final int bus = 23;
+    final int bus = 51;
 
     @Before
     public void setup() {
@@ -32,7 +32,7 @@ public class CdsVyatkaTest {
     }
 
     public void chooseBusTest() throws InterruptedException {
-        var dataSelectables = driver.findElements(By.xpath("//option[@value='1023']"));
+        var dataSelectables = driver.findElements(By.xpath("//option[@value='1051']"));
         Assert.assertNotNull(dataSelectables);
         dataSelectables.get(1).click();
 

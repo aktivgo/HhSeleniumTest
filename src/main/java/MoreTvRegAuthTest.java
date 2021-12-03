@@ -10,7 +10,7 @@ public class MoreTvRegAuthTest {
     WebDriver driver;
     final String URL = "https://more.tv/";
 
-    final String email = "aktivgo01062001@gmail.com";
+    final String email = "aktivgo010620011@gmail.com";
     final String password = "0192837465";
 
     @Before
@@ -34,6 +34,10 @@ public class MoreTvRegAuthTest {
         clickCreateAccountTest();
     }
 
+    public void titleTest() {
+        Assert.assertEquals(driver.getTitle(), "Онлайн-сервис more.tv");
+    }
+
     public void clickCloseTest() throws InterruptedException {
         var closeButton = driver
                 .findElement(By.xpath("//img[@class='Offer-module__Close--7dyI2']"));
@@ -41,10 +45,6 @@ public class MoreTvRegAuthTest {
         closeButton.click();
 
         Thread.sleep(1000);
-    }
-
-    public void titleTest() {
-        Assert.assertEquals(driver.getTitle(), "Онлайн-сервис more.tv");
     }
 
     public void clickSignInTest() throws InterruptedException {
@@ -58,7 +58,7 @@ public class MoreTvRegAuthTest {
         Assert.assertNotNull(signinButton);
         signinButton.click();
 
-        Thread.sleep(1000);
+        Thread.sleep(3000);
     }
 
     public void clickSignUpTest() throws InterruptedException {
@@ -101,7 +101,7 @@ public class MoreTvRegAuthTest {
         Assert.assertNotNull(createAccountButton);
         createAccountButton.click();
 
-        Thread.sleep(1000);
+        Thread.sleep(10000);
     }
 
     @After
